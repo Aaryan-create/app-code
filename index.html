@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shorts Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Shorts Generator</h1>
+        <form id="youtubeForm">
+            <label for="channelId">YouTube Channel ID:</label>
+            <input type="text" id="channelId" required>
+            <label for="apiKey">YouTube API Key:</label>
+            <input type="text" id="apiKey" required>
+            <label for="oauthToken">OAuth Token:</label>
+            <input type="text" id="oauthToken" required>
+            <button type="submit">Save & Start</button>
+        </form>
+        <div class="progress">
+            <p>Generation Progress: <span id="progressText">0%</span></p>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
